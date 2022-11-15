@@ -1,6 +1,8 @@
 import "./App.css";
 import Tweet from "./components/Tweet";
 
+import React from "react";
+
 const tweetsArray = [
   {
     user: {
@@ -37,7 +39,7 @@ const tweetsArray = [
 function App() {
   return (
     <div className="App">
-      <Tweet />
+      <Tweet tweet={tweetsArray[2]} />
     </div>
   );
 }
